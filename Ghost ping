@@ -1,0 +1,25 @@
+#If, A_IsPaused 
+Home::
+suspend
+pause
+return
+#If
+Home::
+suspend
+pause
+return
+
+!a::
+    While GetKeyState("a", "P"){
+    Send (insert-discord-tag-here)
+    Sleep, 40
+    Send {Enter}
+    Sleep, 400
+    Send {Up}
+    Sleep, 100
+    Send ^a {BackSpace}
+    Sleep, 50
+    Send {Enter}
+    Sleep, 50
+    Send {Enter}
+    }
